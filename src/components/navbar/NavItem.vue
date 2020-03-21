@@ -1,5 +1,7 @@
 <template>
-  <a class="nav-item" href="#main">{{name}}</a>
+  <b-container id="navItem" fluid>
+    <a class="navLink" href="#main">{{ name }}</a>
+  </b-container>
 </template>
 
 <script>
@@ -12,15 +14,19 @@ export default {
 </script>
 
 <style>
-.nav-item {
+#navItem {
+  display: flex;
+}
+
+.navLink {
   font-size: 24px;
   font-weight: bold;
   font-family: sans-serif;
   text-transform: uppercase;
-  letter-spacing: ;
+  letter-spacing: 1;
 }
 
-a {
+.navLink {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -31,7 +37,7 @@ a {
   position: relative;
 }
 
-a:after {
+.navLink:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -43,8 +49,14 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
+.navLink:hover:after {
   width: 100%;
   left: 0;
+}
+
+@media only screen and (max-width: 972px) {
+  #navItem {
+    justify-content: center;
+  }
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <img src="@/assets/aaron-noels-circle.png" />
+  <b-container id="circleAvatar" fluid>
+    <img src="@/assets/aaron-noels-circle.png" />
+  </b-container>
 </template>
 
 <script>
@@ -15,7 +17,16 @@ img {
   transition-timing-function: ease-out;
 }
 
-img:hover {
-  overl: aquamarine;
+#circleAvatar {
+  display: flex;
+  height: 20vh;
+}
+
+@media only screen and (max-width: 972px) {
+  #circleAvatar {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
 }
 </style>

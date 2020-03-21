@@ -1,6 +1,6 @@
 <template>
-  <div class="typewriter">
-    <h1>{{name}}</h1>
+  <div id="typeWriter">
+    <h1 id="typeWriterContent">{{ name }}</h1>
   </div>
 </template>
 
@@ -14,16 +14,18 @@ export default {
 </script>
 
 <style>
-.typewriter {
-  display: inline-block;
+#typeWriter {
+  display: flex;
+  justify-content: flex-start;
 }
-.typewriter h1 {
-  font-size: 120px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+
+#typeWriterContent {
+  font-size: 7vw;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 

@@ -1,14 +1,12 @@
 <template>
-  <footer>
-    <div class="links">
+  <div id="footer">
+    <div id="footerLinks">
       <FooterItem />
       <FooterItem />
       <FooterItem />
     </div>
-    <div class="logoContainer">
-      <PxlLogo />
-    </div>
-  </footer>
+    <PxlLogo />
+  </div>
 </template>
 
 <script>
@@ -24,22 +22,17 @@ export default {
 </script>
 
 <style>
-footer {
+#footer {
   align-items: center;
   border-top: 2px solid black;
   display: flex;
   height: 15vh;
 }
 
-.links {
+#footerLinks {
   display: flex;
   flex: 5;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-.logoContainer {
-  display: flex;
-  height: 100%;
 }
 </style>
