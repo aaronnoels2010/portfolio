@@ -11,7 +11,7 @@
         I'm always open to new opportunities.
       </p>
 
-      <a href="mailto:aaron.noels@ae.be" class="btn btn--primary contact__cta" ref="ctaEl" data-hover>
+      <a href="mailto:noels.aaron@gmail.com" class="btn btn--primary contact__cta" ref="ctaEl" data-hover>
         <i class="fas fa-envelope"></i> Send me a message
       </a>
 
